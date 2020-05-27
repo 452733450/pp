@@ -16,7 +16,7 @@ public class GenSn {
 
     private static String genSn(Integer promotionId) {
         Integer radix = 32;
-
+        logger.info("test");
         Calendar c = Calendar.getInstance();
         StringBuilder sb = new StringBuilder();
         sb.append(Integer.toString(c.get(Calendar.MONTH) + 1, radix));
