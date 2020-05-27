@@ -10,6 +10,7 @@ public class PpApplication {
     private static final Logger logger = LoggerFactory.getLogger(PpApplication.class);
 
     public static void main(String[] args) {
+        logger.info("test");
         SpringApplication.run(PpApplication.class, args);
     }
 
