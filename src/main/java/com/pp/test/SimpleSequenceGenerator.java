@@ -23,6 +23,7 @@ public class SimpleSequenceGenerator {
     }
 
     public static String getRandomSeq() {
+        System.out.println("test");
         long val = getCRC32Value(UUID.randomUUID().toString().replaceAll("-", ""));
         String tmp = Long.toString(val, 31).toUpperCase();
         if(tmp.length()<7) {
